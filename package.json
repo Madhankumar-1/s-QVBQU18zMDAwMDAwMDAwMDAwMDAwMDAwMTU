@@ -1,0 +1,39 @@
+{
+  "name": "@cny-cdk-stack/test-lambda",
+  "version": "0.0.25",
+  "description": "Module to store the lictestenses stack lambda code",
+  "main": "./index.js",
+  "keywords": [],
+  "author": "Tachyon Systems",
+  "type": "module",
+  "license": "ISC",
+  "publishConfig": {
+    "registry": "https://pkgs.dev.azure.com/Tachyon-Systems/Deployment-modules/_packaging/cny-cdk-stacks/npm/registry/"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "sh publish.sh",
+    "clean": "rm -rf ./dist node_modules package-lock.json pnpm-lock.yaml",
+    "clean-start": "pnpm run clean && pnpm run start",
+    "export-npm": "npm publish",
+    "export": "pnpm publish  --no-git-checks"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.20",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.3.3"
+  },
+  "dependencies": {
+    "@cny-src/serverless.aws.lambda.authorizer.http.default": "*",
+    "aws-sdk": "^2.1290.0",
+    "@cny-src/serverless.aws.lambda": "*",
+    "@aws-sdk/client-secrets-manager": "^3.808.0",
+    "pg": "^8.11.2",
+    "esbuild": "^0.25.5",
+    "@aws-sdk/client-dynamodb": "^3.245.0",
+    "@aws-sdk/lib-dynamodb": "^3.245.0",
+    "aws-xray-sdk-core": "^3.4.1",
+    "@cny-globalservices/common": "*",
+    "uuid": "^11.0.3"
+  }
+}
