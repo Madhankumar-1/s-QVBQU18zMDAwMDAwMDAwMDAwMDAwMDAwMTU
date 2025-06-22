@@ -1,0 +1,158 @@
+{
+     "NO_BODY": {
+          "statusCode": 400,
+          "body": {
+               "code": 400500,
+               "title": "No body provided",
+               "detail": "Body is not provided. Enter the required data in the input fields",
+               "type": "/docs/response/NoBody"
+          }
+     },
+     "NO_HEADERS": {
+          "statusCode": 400,
+          "body": {
+               "code": 400000,
+               "title": "No headers provided",
+               "detail": "Headers are not provided. Please provide required headers.",
+               "type": "/docs/response/NoHeaders"
+          }
+     },
+     "NO_X_CORRELATION_ID": {
+          "statusCode": 400,
+          "body": {
+               "code": 400100,
+               "title": "No x-correlation-id header provided",
+               "detail": "CorrelationId is not provided in x-correlation-id header. Correlation id should be provided in the x-correlation-id header.",
+               "type": "/docs/response/NoCorrelationId"
+          }
+     },
+     "NO_X_APP_OS": {
+          "statusCode": 400,
+          "body": {
+               "code": 400101,
+               "title": "No x-app-os header provided",
+               "detail": "OS is not provided in the x-app-os header. OS of the device should be given in x-app-os header.",
+               "type": "/docs/response/NoAppOs"
+          }
+     },
+     "INVALID_X_APP_OS": {
+          "statusCode": 400,
+          "body": {
+               "code": 400102,
+               "title": "Header: X-App-OS can only have one of these values: ios, android",
+               "detail": "OS should be either android or ios. Currently we aren't supporting other operating systems",
+               "type": "/docs/response/InvalidAppOs"
+          }
+     },
+     "NO_X_APP_VERSION": {
+          "statusCode": 400,
+          "body": {
+               "code": 400103,
+               "title": "No x-app-version header provided",
+               "detail": "x-app-version header not found. Provide app version in x-app-version header",
+               "type": "/docs/response/NoAppVersion"
+          }
+     },
+     "NO_X_APP_NAME": {
+          "statusCode": 400,
+          "body": {
+               "code": 400104,
+               "title": "No x-app-name header provided",
+               "detail": "App name is not provided in x-app-name header. App name should be provided in x-app-name header",
+               "type": "/docs/response/NoAppName"
+          }
+     },
+     "INVALID_X_APP_NAME": {
+          "statusCode": 400,
+          "body": {
+               "code": 400105,
+               "title": "Header: X-App-Name must be one of the following: [cny, cgw]",
+               "detail": "App name should be TalkSite. No other names are accepted",
+               "type": "/docs/response/InvalidAppName"
+          }
+     },
+     "NO_X_APP_COUNTRY": {
+          "statusCode": 400,
+          "body": {
+               "code": 400106,
+               "title": "No x-app-country header provided",
+               "detail": "Country is not given in x-app-country header. Country should be provided in x-app-country header.",
+               "type": "/docs/response/NoAppCountry"
+          }
+     },
+     "INVALID_X_APP_COUNTRY": {
+          "statusCode": 400,
+          "body": {
+               "code": 400107,
+               "title": "Header: X-App-Country must be au",
+               "detail": "Available countries: au. Other countries will be available soon",
+               "type": "/docs/response/InvalidAppCountry"
+          }
+     },
+     "NO_X_DEVICE_ID": {
+          "statusCode": 400,
+          "body": {
+               "code": 400108,
+               "title": "No x-device-id header provided",
+               "detail": "Device Id is not provided in x-device-id header. Device Id should be provided in x-device-id header",
+               "type": "/docs/response/NoDeviceId"
+          }
+     },
+     "NO_X_CLIENT_ID": {
+          "statusCode": 400,
+          "body": {
+               "code": 400109,
+               "title": "No x-client-id provided",
+               "detail": "Client Id is not provided in x-client-id header. Client Id should be provided in x-client-id header",
+               "type": "/docs/response/NoClientId"
+          }
+     },
+     "NO_X_CLIENT_SECRET": {
+          "statusCode": 400,
+          "body": {
+               "code": 400110,
+               "title": "No x-client-secret provided",
+               "detail": "No x-client-secret header is provided. All the client-secrets should be provided in x-client-secret header",
+               "type": "/docs/response/NoClientSecret"
+          }
+     },
+     "NO_AUTHORIZATION": {
+          "statusCode": 401,
+          "body": {
+               "code": 401101,
+               "title": "No authorization provided",
+               "detail": "No authorization header is provided headers. Authorization header should be given in headers",
+               "type": "/docs/response/NoAuthorization"
+          }
+     },
+     "REQUEST_ACCEPTED": {
+          "statusCode": 202,
+          "body": {
+               "code": 202100
+          }
+     },
+     "REQUEST_SUCCESS": {
+          "statusCode": 200,
+          "body": {
+               "code": 200000
+          }
+     },
+     "INTERNAL_SERVER_ERROR": {
+          "statusCode": 500,
+          "body": {
+               "code": 500000,
+               "title": "Error happened on server side",
+               "detail": "Error happened in server while processing request",
+               "type": "/docs/response/InternalServerError"
+          }
+     },
+     "DATABASE_ERROR": {
+          "statusCode": 500,
+          "body": {
+               "code": 500002,
+               "title": "Error happened in database",
+               "detail": "Error happened in the database. It may be due to database unable to process the request.",
+               "type": "/docs/response/DatabaseError"
+          }
+     }
+}

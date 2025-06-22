@@ -1,0 +1,35 @@
+{
+     "_headers": {
+          "authorization": "token",
+          "x-correlation-id": "correlation-id",
+          "x-app-os": {
+               "type": "string",
+               "values": [
+                    "IOS*",
+                    "Android",
+                    "Windows",
+                    "Linux"
+               ]
+          },
+          "x-app-version": "version",
+          "x-app-name": {
+               "type": "string",
+               "values": [
+                    "TalkSite"
+               ]
+          },
+          "x-app-country": {
+               "type": "country-code",
+               "values": [
+                    "au*",
+                    "us",
+                    "ind"
+               ]
+          },
+          "x-device-id": "alphaNumeric-id",
+          "x-client-id": "client-id",
+          "x-client-secret": "secret"
+     },
+     "_pathParameters": {},
+     "_body": {}
+}

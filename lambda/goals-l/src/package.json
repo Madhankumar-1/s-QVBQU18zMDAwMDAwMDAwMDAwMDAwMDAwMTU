@@ -1,0 +1,16 @@
+{
+     "name": "list-lambda-template",
+     "version": "1.0.0",
+     "description": "list-lambda-template",
+     "main": "./index.js",
+     "type": "module",
+     "scripts": {},
+     "author": "Tachyon Systems",
+     "license": "ISC",
+     "devDependencies": {
+          "@types/node": "^20.12.12"
+     },
+     "dependencies": {
+          "@cny-src/serverless.aws.lambda": "*"
+     }
+}
